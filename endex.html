@@ -14,13 +14,13 @@
             color: #078005;
         }
 
-        /* Barra de navegación */
+        
         .navbar {
             background-color: #028807;
             padding: 15px 0;
             color: white;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,7 +37,7 @@
             text-decoration: underline;
         }
 
-        /* Barra de búsqueda */
+        
         .search-bar {
             margin: 20px auto;
             width: 80%;
@@ -70,7 +70,7 @@
             background-color: #06aa37;
         }
 
-        /* Sugerencias de búsqueda */
+        
         .suggestions {
             list-style: none;
             padding: 0;
@@ -95,7 +95,7 @@
             background-color: #f0f0f0;
         }
 
-        /* Contenedor de productos */
+        
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -104,12 +104,12 @@
             margin-top: 20px;
         }
 
-        /* Estilo de los productos */
+        
         .product {
             position: relative;
             background-color: #fff;
-            border-radius: 12px; /* Bordes más redondeados */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombras más suaves */
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
@@ -118,11 +118,11 @@
         }
 
         .product:hover {
-            transform: translateY(-12px); /* Elevación más suave */
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el mouse */
+            transform: translateY(-12px); 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
         }
 
-        /* Imagen del producto */
+        
         .product img {
             width: 100%;
             height: 220px;
@@ -131,10 +131,10 @@
         }
 
         .product:hover img {
-            transform: scale(1.05); /* Zoom suave al pasar el mouse */
+            transform: scale(1.05); 
         }
 
-        /* Título del producto */
+        
         .product h3 {
             font-size: 1.4rem;
             color: #333;
@@ -142,7 +142,7 @@
             font-weight: 600;
         }
 
-        /* Precio del producto */
+        
         .product .price {
             font-size: 1.5rem;
             color: #009f3a;
@@ -150,14 +150,14 @@
             margin: 10px 0;
         }
 
-        /* Descripción corta del producto */
+        
         .product .description {
             font-size: 1rem;
             color: #555;
             margin: 10px 0 20px;
         }
 
-        /* Botón de compra */
+       
         .product .buy-button {
             background-color: #00ac28;
             color: #ffffff;
@@ -237,20 +237,20 @@
         <!-- Producto 1 (OFERTA) -->
         <div class="product">
             <div class="offer-tag">OFERTA</div>
-            <img src="1.jpeg" alt="Producto 1">
-            <h3>V9 Business CSR</h3>
-            <p class="price">$600</p>
-            <p class="description">Auricular inalámbrico Bluetooth con gancho para la oreja, sonido estéreo</p>
+            <img src="5,3.jpeg" alt="Producto 1">
+            <h3>Auriculares inalámbrico</h3>
+            <p class="price">$1100</p>
+            <p class="description">5,3 con pantalla Led</p>
             <a href="https://wa.me/18294379911?text=Hola,%20quiero%20comprar%20Producto%201%20a%20$600" class="buy-button" target="_blank">Comprar</a>
         </div>
 
         <!-- Producto 2 (OFERTA) -->
         <div class="product">
             <div class="offer-tag">OFERTA</div>
-            <img src="2.jpeg" alt="Producto 2">
-            <h3>Lenovo LP3PRO</h3>
-            <p class="price">$800</p>
-            <p class="description">Auriculares Bluetooth LP3PRO, con estilo intrauricular y pantalla de batería</p>
+            <img src="hol.jpeg" alt="Producto 2">
+            <h3>Auriculares inalámbrico</h3>
+            <p class="price">$850</p>
+            <p class="description">Auriculares </p>
             <a href="https://wa.me/18294379911?text=Hola,%20quiero%20comprar%20Producto%202%20a%20$800" class="buy-button" target="_blank">Comprar</a>
         </div>
 
@@ -258,7 +258,7 @@
         <div class="product">
             <img src="3.jpeg" alt="Producto 3">
             <h3>Audífonos S20</h3>
-            <p class="price">$600</p>
+            <p class="price">$1200</p>
             <p class="description">Audífonos Inalámbricos Tws 5.1, sonido estéreo</p>
             <a href="https://wa.me/18294379911?text=Hola,%20quiero%20comprar%20Producto%203%20a%20$600" class="buy-button" target="_blank">Comprar</a>
         </div>
@@ -282,6 +282,7 @@
                 item.style.display = text.includes(query) ? 'block' : 'none';
             }
         }
+         
 
         // Cuando se hace clic en una sugerencia
         document.getElementById('suggestionsList').addEventListener('click', function(event) {
